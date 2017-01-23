@@ -21,13 +21,13 @@
         users: []
       }
     },
-    created: function () {
+    components: {
+      'user-card': UserCard
+    },
+    mounted: function () {
       axios.get('https://randomuser.me/api/?results=5').then((data) => {
         this.users = data.data.results
       })
-    },
-    components: {
-      'user-card': UserCard
     }
   }
 </script>

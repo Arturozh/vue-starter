@@ -1,5 +1,5 @@
 <template>
-  <div v-bind:class="divClassName">
+  <div :class="divClassName">
     <img src="../../assets/logo.png">
   </div>
 </template>
